@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+#!pip install joblib
 import joblib
 import sklearn
 
@@ -8,7 +9,7 @@ import sklearn
 #manipulating large datasets, or performing expensive computations.
 
 inputs= joblib.load("input.h5")
-Model = joblib.load("model.joblib")
+Model = joblib.load("model.joblip")
 st.header("Loan Predicator Decision Project")
 # @st.cache(suppress_st_warning=True)
 # def get_fvalue(val):
